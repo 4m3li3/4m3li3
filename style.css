@@ -1,36 +1,37 @@
-body {
-  background-color:black;
+html,
+body,
+header,
+.view {
+  height: 100%;
 }
 
-#demo {
-  color: white;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-@keyframes move {
-  0% {
-    transform: translateX(-1000px);
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
   }
-  100% {
-    transform: translateX(0px);
-  } 
 }
 
-.char {
-  color: white;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  animation-name: move;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-  transform: translateX(-1000px);
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 600px;
+  }
 }
 
-.char:hover {
-  filter: blur(3px);
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+
+.btn-white {
+  color: black !important;
+}
+
+h6 {
+  line-height: 1.7;
 }
