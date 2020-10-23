@@ -1,0 +1,68 @@
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 1000px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+}
+
+
+h6 {
+  line-height: 1.7;
+}
+
+
+.element {
+  height: 400px;
+  width: 400px;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+  border-radius: 100%;
+}
+
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(-300px, 0);
+  }
+  
+  80% {
+    transform: translate(70px, 0);
+  }
+}
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(158,154,177);
+  background: linear-gradient(90deg, rgba(158,154,177,0.05926120448179273) 0%, rgba(107,129,152,0.07886904761904767) 100%);
+}
